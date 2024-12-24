@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 800px;
+    background-color: #4C585B;
+    border-radius: 15px;
+}
+
+.menu {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    margin: 3px;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 7px 10px;
+}
+
+.menu li:hover{
+    background-color: #7E99A3;
+    border-radius: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li .menu-dropdown{
+    display: none;
+}
+
+.menu li:hover .menu-dropdown{
+    background-color: #4C585B;
+    display: block;
+    position: absolute;
+    border-radius: 15px;
+    margin: 7px 0;
+    padding: 7px 10px;
+}
