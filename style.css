@@ -1,11 +1,31 @@
 body {
-    margin: 0;
+    margin: 10px auto;
     padding: 0;
 }
 
-.content {
+header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.top-content .image img{
+    width: 50px;
+}
+
+.top-content .searchbar input{
+    padding: 7px 10px;
+    border: 2px solid #7E99A3;
+    border-radius: 15px;
+    outline: none;
 }
 
 nav {
@@ -48,3 +68,5 @@ nav {
     margin: 7px 0;
     padding: 7px 10px;
 }
+
+
