@@ -15,17 +15,50 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    /* background-color: aqua; */
+    width: 800px;
+}
+
+.top-content .image{
+    /* background-color: aquamarine; */
 }
 
 .top-content .image img{
     width: 50px;
 }
 
-.top-content .searchbar input{
+.top-content .searchbar {
+    /* background-color: antiquewhite; */
+    margin-left: 10px;
+    width: 30%;
+}
+
+.top-content .searchbar form {
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+}
+
+.top-content .searchbar form button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 7px 10px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.top-content .searchbar form img{
+    width: 10px;
+}
+ 
+.top-content .searchbar form input{
     padding: 7px 10px;
     border: 2px solid #7E99A3;
     border-radius: 15px;
     outline: none;
+    width: 100%;
 }
 
 nav {
