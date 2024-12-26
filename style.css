@@ -16,7 +16,7 @@ header {
     align-items: center;
     margin-bottom: 10px;
     /* background-color: aqua; */
-    width: 800px;
+    width: 1000px;
 }
 
 .top-content .image{
@@ -62,7 +62,7 @@ header {
 }
 
 nav {
-    width: 800px;
+    width: 1000px;
     background-color: #4C585B;
     border-radius: 15px;
 }
