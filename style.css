@@ -70,7 +70,7 @@ header {
 nav {
     width: 1000px;
     background-color: #4C585B;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .menu {
@@ -147,11 +147,63 @@ main .content article .image-content img {
     border-radius: 15px;
 }
 
+main .content article p{
+    color: #858993;
+    line-height: 1.5;
+}
+
 main aside {
-    flex: 1;
+    /* flex: 1; */
     padding: 0 10px;
     /* background-color: antiquewhite; */
 }
 
+main aside .related-content {
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-bottom: 10px;
+}
 
+main aside .related-content img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
 
+main aside .related-content h3{
+    margin: 0;
+    margin: 0 0 10px 10px;
+}
+
+main aside .related-content p{
+    margin: 0;
+    margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #4C585B;
+    justify-content:space-between;
+    display: flex;
+    padding: 20px;
+}
+
+footer .identity{
+    /* background-color: antiquewhite; */
+}
+
+footer .socmed{
+    /* background-color: yellow; */
+}
+
+footer .identity img {
+    width: 100px;
+}
+
+footer .identity p {
+    margin: 0;
+}
+
+footer .socmed .img-socmed img {
+    width: 35px;
+}
