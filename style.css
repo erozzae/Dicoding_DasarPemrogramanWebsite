@@ -1,7 +1,13 @@
 body {
     margin: 10px auto;
     padding: 0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: justify;
 }
+
+/* Header */
 
 header {
     display: flex;
@@ -101,5 +107,51 @@ nav {
     margin: 7px 0;
     padding: 7px 10px;
 }
+
+/* content */
+main {
+    /* background-color: violet; */
+    padding: 0 20px;
+    display: flex;
+}
+
+main .content {
+    flex: 2;
+    padding: 0 10px;
+    /* background-color: aquamarine; */
+}
+
+main .content article h1{
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+main .content article .publish-info ul {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 13px;
+    list-style: none;
+    color: #868e96;
+}
+
+main .content article .publish-info .writter{
+    font-weight: 500;
+}
+
+main .content article .publish-info .date{
+    font-weight: 400;
+}
+
+main .content article .image-content img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+main aside {
+    flex: 1;
+    padding: 0 10px;
+    /* background-color: antiquewhite; */
+}
+
 
 
