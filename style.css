@@ -1,9 +1,10 @@
 body {
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     padding: 0;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    height: auto;
 }
 
 /* Header */
@@ -164,7 +165,7 @@ main .content article .publish-info .date{
 
 main .content article .publish-info .writer-socmed img{
     margin-left: 10px;
-    width: 40px;
+    width: 30px;
 }
 
 main .content article .image-content img {
@@ -223,27 +224,41 @@ main aside .related-content .content-info p{
 /* Footer */
 footer {
     background-color: #4C585B;
-    justify-content:space-between;
     display: flex;
+    justify-content: center;
+}
+
+footer .footer-content {
+    width: 1000px;
+    display: flex;
+    justify-content:space-between;
     padding: 20px;
+    margin-top: auto;
 }
 
-footer .identity{
-    /* background-color: antiquewhite; */
+footer .footer-content .identity{
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
 
-footer .socmed{
-    /* background-color: yellow; */
+footer .footer-content .identity .identity-info{
+    margin-left: 10px;
 }
 
-footer .identity img {
+footer .footer-content .identity .identity-image img{
     width: 100px;
 }
 
-footer .identity p {
-    margin: 0;
+
+footer .footer-content .socmed{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    flex: 1;
 }
 
-footer .socmed .img-socmed img {
+footer .footer-content .socmed .img-socmed img {
     width: 35px;
 }
