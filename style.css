@@ -7,7 +7,7 @@ body {
     height: auto;
 }
 
-body h1, h3, h4 {
+h1, h3, h4 {
     font-family: "Ubuntu", serif;
 }
 
@@ -28,7 +28,7 @@ header {
     width: 1000px;
 }
 
-
+/* Top-content */
 .top-content .image img{
     width: 50px;
 }
@@ -65,6 +65,7 @@ header {
     width: 100%;
 }
 
+/* Navbar */
 nav {
     width: 100%;
     display: flex;
@@ -73,7 +74,7 @@ nav {
     padding: 10px 0;
 }
 
-.menu {
+nav .menu {
     width: 1000px;
     display: flex; 
     justify-content: space-around; 
@@ -82,27 +83,27 @@ nav {
     padding: 0;
 }
 
-.menu li {
+nav .menu li {
     font-family: "Ubuntu", serif;
     list-style-type: none;
     padding: 7px 10px;
 }
 
-.menu li:hover{
+nav .menu li:hover{
     background-color: #7E99A3;
     border-radius: 15px;
 }
 
-.menu li a {
+nav .menu li a {
     color: white;
     text-decoration: none;
 }
 
-.menu li .menu-dropdown{
+nav .menu li .menu-dropdown{
     display: none;
 }
 
-.menu li:hover .menu-dropdown{
+nav .menu li:hover .menu-dropdown{
     background-color: #4C585B;
     display: block;
     position: absolute;
@@ -136,7 +137,7 @@ main .content article .publish-info {
     justify-content: space-between;
 }
 
-main .content article .writer-info {
+main .content article .publish-info .writer-info {
     display: flex;
 }
 
@@ -166,10 +167,44 @@ main .content article .publish-info .writer-socmed img{
     width: 30px;
 }
 
-main .content article .image-content img {
-    width: 100%;
+/* Slider */
+main .content article .slider {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
     border-radius: 15px;
 }
+
+main .content article .slider .image-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+main .content article .slider .image-content img {
+    border-radius: 15px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+main .content article .slider .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+main .content article .slider .controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 
 main .content article p{
     text-align: justify;
@@ -220,6 +255,7 @@ footer {
     background-color: #4C585B;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 footer .footer-content {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal Teknologi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +53,7 @@
                         </div>
                         <ul>
                             <li class="writter">Alexander Punk</li>
-                            <li class="date">13 Feb 2024 | 119.20 WIB </li>
+                            <li class="date">13 Feb 2024 | 119.20 WIB</li>
                         </ul>
                     </div>
 
@@ -61,26 +61,26 @@
                         <img src="./linkedin.png" alt="">
                         <img src="./gmail.png" alt="">
                     </div>
-
                 </div>
 
-                <div class="image-content">
-                    <img src="./ai-image.webp" alt="img-content">
+                <div class="slider">
+                    <div class="image-content">
+                        <img src="./ai-image.webp" alt="Gambar ai 1">
+                        <img src="./ai-robot-1.jpg" alt="Gambar ai 2">
+                        <img src="./ai-robot-2.webp" alt="Gambar ai 3">
+                    </div>
+                    <div class="controls">
+                        <button id="prev">&#9664;</button>
+                        <button id="next">&#9654;</button>
+                    </div>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nesciunt deleniti repudiandae,
-                    alias aperiam quia quasi blanditiis minus fugit officiis sed debitis quaerat. Tenetur ducimus
-                    eligendi incidunt sequi quo tempora illum quos voluptatibus nobis consectetur, molestiae, architecto
-                    aperiam fugiat, unde nisi laudantium vitae necessitatibus cum maiores dolorum tempore aut
-                    voluptates? Vero cumque ipsam nam quisquam asperiores! Odit non dolorum deserunt aut quod quas
-                    asperiores exercitationem in. Cum velit mollitia quis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sunt nihil ullam reprehenderit dicta
-                    voluptate tempora similique provident nostrum itaque praesentium quaerat, reiciendis ad officiis
-                    modi, repudiandae saepe animi dolore. Saepe, minus. Porro officiis fugit, ea unde consectetur cumque
-                    nobis ipsam, ullam deleniti quod ut molestias omnis dolorem! Explicabo corporis eaque quia beatae
-                    exercitationem odio vero sit quos aperiam repudiandae!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nesciunt deleniti repudiandae, alias aperiam quia quasi blanditiis minus fugit officiis sed debitis quaerat. Tenetur ducimus eligendi incidunt sequi quo tempora illum quos voluptatibus nobis consectetur, molestiae, architecto aperiam fugiat, unde nisi laudantium vitae necessitatibus cum maiores dolorum tempore aut voluptates? Vero cumque ipsam nam quisquam asperiores! Odit non dolorum deserunt aut quod quas asperiores exercitationem in. Cum velit mollitia quis.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sunt nihil ullam reprehenderit dicta voluptate tempora similique provident nostrum itaque praesentium quaerat, reiciendis ad officiis modi, repudiandae saepe animi dolore. Saepe, minus. Porro officiis fugit, ea unde consectetur cumque nobis ipsam, ullam deleniti quod ut molestias omnis dolorem! Explicabo corporis eaque quia beatae exercitationem odio vero sit quos aperiam repudiandae!</p>
             </article>
         </div>
+
         <aside>
             <h3>Konten Lainnya</h3>
             <div class="related-content">
@@ -92,6 +92,7 @@
                     <p>08 Agt 2024 19.44 WIB</p>
                 </div>
             </div>
+
             <div class="related-content">
                 <div class="image-contents">
                     <img src="./ai-dlm-kesehatan.jpg" alt="">
@@ -101,6 +102,7 @@
                     <p>08 Agt 2024 19.44 WIB</p>
                 </div>
             </div>
+
             <div class="related-content">
                 <div class="image-contents">
                     <img src="./computer-vision.jpg" alt="">
@@ -121,11 +123,10 @@
                 </div>
                 <div class="identity-info">
                     <h4>Portal Teknologi</h4>
-                    <p>Hak Cipta Lorem Ipsum Dolor Sit Amet@2021
-                        Direktorat Lorem ipsum dolor sit. - Gedung Lorem, ipsum dolor. II Lt.12
-                        Jl. Lorem, ipsum dolor. 2-4 Jakarta</p>
+                    <p>Hak Cipta Lorem Ipsum Dolor Sit Amet@2021 Direktorat Lorem ipsum dolor sit. - Gedung Lorem, ipsum dolor. II Lt.12 Jl. Lorem, ipsum dolor. 2-4 Jakarta</p>
                 </div>
             </div>
+
             <div class="socmed">
                 <h4>Social Media</h4>
                 <div class="img-socmed">
@@ -134,7 +135,31 @@
                     <a href=""><img src="./twitter.png" alt=""></a>
                 </div>
             </div>
+        </div>
     </footer>
+
+    <script>
+        const slider = document.querySelector('.slider .image-content');
+        const images = document.querySelectorAll('.slider .image-content img');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        
+        let currentIndex = 0;
+
+        function updateSliderPosition() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        prev.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            updateSliderPosition();
+        });
+
+        next.addEventListener('click', () => {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            updateSliderPosition();
+        });
+    </script>
 </body>
 
 </html>
