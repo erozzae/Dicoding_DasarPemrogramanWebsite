@@ -1,10 +1,14 @@
 body {
     margin: 30px auto 0 auto;
     padding: 0;
-    font-family: "Montserrat", serif;
+    font-family: "Nanum Gothic", serif;
     font-optical-sizing: auto;
     font-style: normal;
     height: auto;
+}
+
+body h1, h3, h4 {
+    font-family: "Ubuntu", serif;
 }
 
 /* Header */
@@ -21,26 +25,20 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    /* background-color: aqua; */
     width: 1000px;
 }
 
-.top-content .image{
-    /* background-color: aquamarine; */
-}
 
 .top-content .image img{
     width: 50px;
 }
 
 .top-content .searchbar {
-    /* background-color: antiquewhite; */
     margin-left: 10px;
     width: 50%;
 }
 
 .top-content .searchbar form {
-    /* background-color: blue; */
     position: relative;
     display: flex;
 }
@@ -85,6 +83,7 @@ nav {
 }
 
 .menu li {
+    font-family: "Ubuntu", serif;
     list-style-type: none;
     padding: 7px 10px;
 }
@@ -124,7 +123,6 @@ main {
 main .content {
     flex: 2;
     padding: 0 10px;
-    /* background-color: aquamarine; */
 }
 
 main .content article h1{
@@ -179,6 +177,7 @@ main .content article p{
     line-height: 1.5;
 }
 
+/* Aside */
 main aside {
     flex: 1;
     padding: 0 10px;
@@ -191,13 +190,8 @@ main aside h3{
 }
 
 main aside .related-content {
-    /* background-color: aquamarine; */
     display: flex;
     margin-bottom: 10px;
-}
-
-main aside .related-content .content-info {
-    /* background-color: #4C585B; */
 }
 
 main aside .related-content .image-contents img {
@@ -236,6 +230,10 @@ footer .footer-content {
     margin-top: auto;
 }
 
+footer .footer-content h4 {
+    color: white;
+}
+
 footer .footer-content .identity{
     display: flex;
     align-items: center;
@@ -246,10 +244,13 @@ footer .footer-content .identity .identity-info{
     margin-left: 10px;
 }
 
+footer .footer-content .identity .identity-info p{
+    color: #858993;
+}
+
 footer .footer-content .identity .identity-image img{
     width: 100px;
 }
-
 
 footer .footer-content .socmed{
     display: flex;
